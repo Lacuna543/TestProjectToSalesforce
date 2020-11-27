@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<String> originText = ReaderWriter.readFromFile(FILE_NAME_SOURCE);
-        String result = Util.filterAndReverseLines(originText);
+        String result = Util.reworkLines(originText);
         ReaderWriter.writeToFile(result, FILE_NAME_DESTINATION);
     }
 }
