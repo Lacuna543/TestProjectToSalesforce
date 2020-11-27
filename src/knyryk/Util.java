@@ -6,22 +6,20 @@ import java.util.List;
 
 public class Util {
     public static List<Integer> fibonacciCalculation(int n) { //calculation number to given N
-        List<Integer> list = new ArrayList<>();
+        List<Integer> fibSequence = new ArrayList<>();
 
         if (n == 0) {
-            return list;
+            return fibSequence;
         }
-
-        list.add(1);
-
+        fibSequence.add(1);
         int current = 2;
 
         for (int i = 3; current <= n; i++) {
-            list.add(current);
-            current = list.get(i - 2) + list.get(i - 3);
+            fibSequence.add(current);
+            current = fibSequence.get(i - 2) + fibSequence.get(i - 3);
         }
 
-        return list;
+        return fibSequence;
     }
 
     public static String reworkLines(List<String> origin) { //filter, reverse file
