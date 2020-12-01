@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 
 public class ReaderWriter {
 
-    protected static List<String> readFromFile(String fileName) {
+    public static List<String> readFromFile(String fileName) {
         List<String> text = new ArrayList<>();
         try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
             text = stream.collect(Collectors.toList());

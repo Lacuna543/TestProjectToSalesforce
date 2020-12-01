@@ -22,7 +22,7 @@ public class Util {
         return fibSequence;
     }
 
-    public static String reworkLines(List<String> origin) { //filter, reverse file
+    public static String reworkLines(List<String> origin) { //filter, reverse lines in file
         StringBuilder result = new StringBuilder();
         List<Integer> fib = fibonacciCalculation(origin.size());
 
